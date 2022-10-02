@@ -41,7 +41,7 @@ new Vue({
             let bajaPuntos = this.calcularHeridas(this.rangoAtaqueEspecial)
             this.saludMonstruo -= bajaPuntos;
             this.turnos.unshift({
-                esJugador:false,
+                esJugador:true,
                 text:"El Jugador golpea al monstruo por " + bajaPuntos
             });
 
