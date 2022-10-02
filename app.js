@@ -15,7 +15,9 @@ new Vue({
         getSalud(salud) {
             return `${salud}%`
         },
+
         empezarPartida: function () {
+             this.hayUnaPartidaEnJuego=true;
         },
         atacar: function () {
         },
@@ -28,7 +30,11 @@ new Vue({
 
         registrarEvento(evento) {
         },
+        
         terminarPartida: function () {
+            this.hayUnaPartidaEnJuego=false;
+            this.saludJugador = 100;
+            this.saludMonstruo = 100;
         },
 
         ataqueDelMonstruo: function () {
